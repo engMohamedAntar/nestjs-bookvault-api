@@ -5,10 +5,10 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { Bookmark } from 'generated/prisma';
-import { PrismaApiFeatures } from 'src/common/utils/PrismaApiFeatures';
-import { CreateBookmarkDto } from 'src/dto/create-bookmark-dto';
-import { UpdateBookmarkDto } from 'src/dto/update-bookmark-dto';
-import { PrismaService } from 'src/prisma/prisma.service';
+import { PrismaApiFeatures } from '../common/utils/PrismaApiFeatures';
+import { CreateBookmarkDto } from '../dto/create-bookmark-dto';
+import { UpdateBookmarkDto } from '../dto/update-bookmark-dto';
+import { PrismaService } from '../prisma/prisma.service';
 
 @Injectable()
 export class BookmarkService {

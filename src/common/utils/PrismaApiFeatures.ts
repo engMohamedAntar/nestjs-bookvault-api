@@ -7,6 +7,7 @@ export class PrismaApiFeatures {
   private skip: number;
   private keyword: string;
   private page: number;
+  
   constructor(
     private query: Record<string,any>,
     private searchFields: string[],

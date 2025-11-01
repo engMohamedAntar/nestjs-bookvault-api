@@ -1,6 +1,6 @@
 #docker-compose.yml
 services:
-  db:
+  postgres:
     image: postgres
     restart: always
     environment:
@@ -17,6 +17,8 @@ services:
     restart: always
     ports:
       - 8083:8080
+    depends_on:
+      - postgres
 
 volumes:
   postgres-db:
