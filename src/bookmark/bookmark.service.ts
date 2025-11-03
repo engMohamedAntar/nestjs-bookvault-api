@@ -67,7 +67,7 @@ export class BookmarkService {
     const bookmark = await this.prismaService.bookmark.findFirst({
       where: { id: bookmarkId, userId },
     });
-
+    
     if (!bookmark) throw new ForbiddenException('Access denied');
 
     const updatedBookmark = await this.prismaService.bookmark.update({
