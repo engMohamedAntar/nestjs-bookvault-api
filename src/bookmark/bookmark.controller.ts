@@ -13,10 +13,10 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { BookmarkService } from './bookmark.service';
-import { CreateBookmarkDto } from 'src/dto/create-bookmark-dto';
-import { GetUser } from 'src/auth/decorators/get-user.decorator';
+import { CreateBookmarkDto } from '../dto/create-bookmark-dto';
+import { GetUser } from '../auth/decorators/get-user.decorator';
 import { AuthGuard } from '@nestjs/passport';
-import { UpdateBookmarkDto } from 'src/dto/update-bookmark-dto';
+import { UpdateBookmarkDto } from '../dto/update-bookmark-dto';
 
 @UseGuards(AuthGuard('jwt'))
 @Controller('bookmark')
